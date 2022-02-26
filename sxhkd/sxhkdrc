@@ -3,7 +3,7 @@
 #
 
 # terminal emulator
-super + Return
+alt + s
 	alacritty
 
 # program launcher
@@ -12,11 +12,15 @@ super + @space
 
 # browser
 alt + b
-	firefox
+	chromium
 
 # files
 alt + f
 	pcmanfm
+
+# audio
+alt + p
+	pavucontrol
 
 # music
 alt + m
@@ -58,14 +62,21 @@ XF86AudioMute
 
 # brightness control
 XF86MonBrightnessUp
-	brightnessctl set +2%
+	brightnessctl set +5%
 
 XF86MonBrightnessDown
-	brightnessctl set 2%-
+	brightnessctl set 5%-
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+# Screenshot
+super + shift + s
+	flameshot gui
+
+super + shift + f
+	flameshot full
 
 #
 # bspwm hotkeys
