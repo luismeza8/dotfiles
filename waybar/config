@@ -1,7 +1,7 @@
 {
     "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 32, // Waybar height (to be removed for auto height)
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 2, // Gaps between modules (4px)
 
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/window"], 
@@ -13,10 +13,10 @@
         "max-length": 50
     },
     "tray": {
-        "spacing": 4
+        "spacing": 2
     },
     "clock": {
-	"format": "{:%R %a %d %b}",
+	"format": "{:%a %d %b %R}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     },
     "cpu": {
