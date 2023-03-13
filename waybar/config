@@ -4,9 +4,9 @@
     "spacing": 2, // Gaps between modules (4px)
 
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces", "sway/window"], 
-    "modules-center": [],
-    "modules-right": ["cpu", "memory", "backlight", "pulseaudio", "battery", "clock", "tray"],
+    "modules-left": ["clock"], 
+    "modules-center": ["sway/workspaces"],
+    "modules-right": ["cpu", "memory", "backlight", "pulseaudio", "battery", "tray"],
 
     "sway/window": {
         "format": "{app_id}",
@@ -16,7 +16,8 @@
         "spacing": 2
     },
     "clock": {
-	"format": "{:%a %d %b %R}",
+	//"format": "{:%a %d %b %R}",
+	"format": "{:%R %a %d %b}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     },
     "cpu": {
