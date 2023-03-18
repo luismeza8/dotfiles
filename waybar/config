@@ -1,12 +1,12 @@
 {
-    "position": "bottom", // Waybar position (top|bottom|left|right)
+    "position": "top", // Waybar position (top|bottom|left|right)
     "height": 32, // Waybar height (to be removed for auto height)
     "spacing": 2, // Gaps between modules (4px)
 
     // Choose the order of the modules
-    "modules-left": ["clock"], 
-    "modules-center": ["sway/workspaces"],
-    "modules-right": ["cpu", "memory", "backlight", "pulseaudio", "battery", "tray"],
+    "modules-left": ["sway/workspaces"], 
+    "modules-center": ["clock"],
+    "modules-right": ["backlight", "pulseaudio", "battery", "tray"],
 
     "sway/window": {
         "format": "{app_id}",
