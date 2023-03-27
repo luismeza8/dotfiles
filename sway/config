@@ -15,6 +15,7 @@ set $term foot
 set $menu rofi -show drun
 
 default_border pixel 1
+#smart_borders on
 hide_edge_borders smart
 gaps inner 0
 client.focused #E60012 #E60012 #FFFFFF #E60012
