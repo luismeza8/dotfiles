@@ -15,8 +15,8 @@ set $term foot
 set $menu rofi -show drun
 
 default_border pixel 1
-#smart_borders on
-hide_edge_borders smart
+smart_borders on
+#hide_edge_borders smart
 gaps inner 0
 client.focused #E60012 #E60012 #FFFFFF #E60012
 client.unfocused #000000 #000000 #FFFFFF
@@ -63,6 +63,8 @@ exec swayidle -w before-sleep 'swaylock --clock --indicator --screenshots --effe
 
     # Screenshots
     bindsym Print exec grim -g "$(slurp)" "$HOME/Pictures/Screenshots/$(date '+%d%m%y_%H-%M-%S').png"
+
+	#bindsym $mod+Shift+p exec grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4 | wl-copy
 
     # Lock
     bindsym $mod+Escape exec swaylock -w before-sleep 'swaylock --clock --indicator --screenshots --effect-scale 0.4 --effect-vignette 0,2:0.5 --effect-blur 4x2' 
