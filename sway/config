@@ -8,7 +8,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot
+set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -17,7 +17,6 @@ set $menu rofi -show drun
 default_border pixel 1
 smart_borders on
 #hide_edge_borders smart
-gaps inner 0
 client.focused #E60012 #E60012 #FFFFFF #E60012
 client.unfocused #000000 #000000 #FFFFFF
 
